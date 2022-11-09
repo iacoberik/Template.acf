@@ -1,0 +1,4 @@
+.acf-field-settings .acf-field .acf-label,
+.acf-field-settings .acf-field .acf-input {
+    max-width: none;
+}

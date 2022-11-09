@@ -1,0 +1,41 @@
+/*
+Theme Name: Template
+Author: Inside Media Communication
+Author URI: Inside Media Communication_URI
+Description: Wordpress template
+Version: 1.0.0
+*/
+
+header
+{
+    background-color: rgb(26, 26, 26);
+}
+
+.section
+{
+    position: relative;
+    background: var(--bg-image);
+    background-position: var(--bg-position);
+    background-size: var(--bg-size);
+    margin-top: var(--margin-top);
+    padding-top: var(--padding-top);
+    padding-right: var(--padding-right);
+    padding-bottom: var(--padding-bottom);
+    padding-left: var(--padding-left);
+}
+
+section.section.section-styles.section:after
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-overlay-color);
+    opacity: var(--bg-overlay-opacity);
+    top: 0;
+
+}
+
+h2 {
+    color : var(--heading-color);
+}

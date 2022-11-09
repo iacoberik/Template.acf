@@ -1,0 +1,114 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../vendor/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+@import './variables';
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../vendor/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+$theme-colors: map-remove($theme-colors, 
+    "success", 
+    "info", 
+    "warning", 
+    "danger"
+);
+$colors: (
+    "black" : $black,
+    "white" : $white
+);
+$grays: ();
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer,
+    2: $spacer * 2,
+    3: $spacer * 3,
+    4: $spacer * 4,
+    5: $spacer * 5,
+);
+$display-font-sizes: ();
+
+// 5. Include remainder of required parts
+@import "../vendor/bootstrap/scss/maps";
+@import "../vendor/bootstrap/scss/mixins";
+@import "../vendor/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../vendor/bootstrap/scss/utilities";
+// Remove multiple utilities with a comma-separated list
+$utilities: map-remove($utilities,
+    "align",
+    "float", 
+    "opacity",
+    "shadow", 
+    // "top",
+    // "bottom",
+    // "start",
+    // "end",
+    "translate-middle",
+    "border",
+    "border-top",
+    "border-end",
+    "border-bottom",
+    "border-start",
+    "border-color",
+    "border-width",
+    "border-opacity",
+    "font-family", 
+    "font-size",
+    "font-style",
+    "font-weight",
+    "line-height",
+    // "color",
+    "text-opacity",
+    "rounded", 
+    "rounded-top", 
+    "rounded-end", 
+    "rounded-bottom", 
+    "rounded-start"
+);
+// bootstrap icons
+$bootstrap-icons-font-dir: '../vendor/bootstrap-icons/fonts/';
+@import "../vendor/bootstrap-icons/bootstrap-icons";
+
+
+@import "../vendor/bootstrap/scss/reboot";
+@import "../vendor/bootstrap/scss/type";
+@import "../vendor/bootstrap/scss/images";
+@import "../vendor/bootstrap/scss/containers";
+@import "../vendor/bootstrap/scss/grid";
+// @import "../vendor/bootstrap/scss/tables";
+@import "../vendor/bootstrap/scss/forms";
+@import "../vendor/bootstrap/scss/buttons";
+@import "../vendor/bootstrap/scss/transitions";
+// @import "../vendor/bootstrap/scss/dropdown";
+@import "../vendor/bootstrap/scss/button-group";
+@import "../vendor/bootstrap/scss/nav";
+@import "../vendor/bootstrap/scss/navbar";
+// @import "../vendor/bootstrap/scss/card";
+// @import "../vendor/bootstrap/scss/accordion";
+// @import "../vendor/bootstrap/scss/breadcrumb";
+// @import "../vendor/bootstrap/scss/pagination";
+// @import "../vendor/bootstrap/scss/badge";
+// @import "../vendor/bootstrap/scss/alert";
+// @import "../vendor/bootstrap/scss/progress";
+@import "../vendor/bootstrap/scss/list-group";
+// @import "../vendor/bootstrap/scss/close";
+// @import "../vendor/bootstrap/scss/toasts";
+// @import "../vendor/bootstrap/scss/modal";
+// @import "../vendor/bootstrap/scss/tooltip";
+// @import "../vendor/bootstrap/scss/popover";
+// @import "../vendor/bootstrap/scss/carousel";
+// @import "../vendor/bootstrap/scss/spinners";
+// @import "../vendor/bootstrap/scss/offcanvas";
+// @import "../vendor/bootstrap/scss/placeholders";
+@import "../vendor/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../vendor/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+@import './custom';

@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+@mixin transition($property, $duration: 0.3s) {
+    transition-timing-function: ease-in-out;
+    transition-duration: $duration;
+    transition-property: $property;
+}
+
+$design_width: 1920;
+@mixin clamp($property, $size, $min: math.div($size, 2)) {
+    $size-min: $min;
+    $size-vw: math.div($size * 100, $design_width);
+    @if ($size > 0) {
+        #{$property}: clamp(#{$min}px, #{$size-vw}vw, #{$size}px);
+    } @else {
+        #{$property}: clamp(#{$size}px, #{$size-vw}vw, #{$min}px);
+    }
+}

@@ -1,0 +1,31 @@
+// COLORS
+// $primary: #FF323C;
+// $secondary: #26364A;
+$light-blue: #73AAC8;
+// $dark: $secondary;
+$code-color: $light-blue;
+
+// TYPOGRAPHY
+// $font-family-sans-serif: 'Albert Sans', serif;
+// $font-family-code: 'Space Mono', serif;
+$font-size-root: 62.5%;
+// $font-size-base: 1.8rem;
+// $font-size-sm: $font-size-base;
+// $font-size-lg: $font-size-base;
+$font-weight-base: 500;
+$line-height-base: 1.55;
+// $link-color: $primary;
+// $link-hover-color: $secondary;
+
+// SPACER
+$spacer: 1rem;
+
+$enable-negative-margins: true;
+
+$aspect-ratios: (
+    "1x1": 100%,
+    "4x3": calc(3 / 4 * 100%),
+    "16x9": calc(9 / 16 * 100%),
+    "16x10": calc(10 / 16 * 100%),
+    "21x9": calc(9 / 21 * 100%)
+);
