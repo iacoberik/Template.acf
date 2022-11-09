@@ -31,8 +31,7 @@
         if ($background_options['background_image']) {
             $background_image_size = $background_options['background_image_size'] ? $background_options['background_image_size'] : '2048x2048';
             $section_styles[] = '--bg-image: url(' . $background_options['background_image']['sizes'][$background_image_size] . ')';
-        }
-        
+        } 
     }
 
     if ($background_options['background_overlay'])
